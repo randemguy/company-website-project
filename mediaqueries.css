@@ -1,0 +1,35 @@
+@media screen and (max-width:1600px) {
+    .menu-container {
+        display: none;
+    }
+    #hamburger-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:900px) {
+    .menu-container {
+        display: none;
+    }
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:500px) {
+    .menu-container {
+        display: none;
+    }
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav {
+    display: flex;
+  }
+}

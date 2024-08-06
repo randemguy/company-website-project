@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css">
   </head>
   <body>
-    <header class="menu-container">
+    <nav id="desktop-nav" class="main-menu">
       <div class="logo">
-        <h2>BISTROMILE</h2>
+        <img src="./assets/bistro-logo.png" alt="Bistromile Logo" class="logo-image">
       </div>
       <div>
         <ul class="menu-links">
@@ -21,7 +22,26 @@
           <li><a href="./#home">Book A Reservation</a></li>
         </ul>
       </div>
-    </header>
+    </nav>
+    <nav id="hamburger-nav" class="main-menu">
+      <div class="logo">
+        <img src="./assets/bistro-logo.png" alt="Bistromile Logo" class="logo-image">
+      </div>
+      <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#home" onclick="toggleMenu()">Our Menu</a></li>
+          <li><a href="#home" onclick="toggleMenu()">Our Story</a></li>
+          <li><a href="/#home" onclick="toggleMenu()">Contact Us</a></li>
+          <li><a href="/#home" onclick=toggleMenu()>Book A Reservation</a></li>
+      </div>
+      </div>      
+    </nav>
     <section id="hero">
         <div class="hero-container">
         <div class="hero-text">
@@ -29,10 +49,75 @@
           <p>
             For every meal you order at Bistromile, we send a meal to a starving family in a third-world country.
           </p>
-          <div class="hero-btn"><button> Order Now </button>
+          <div class="hero-btn"><button onclick="location.href='./#menu-section'"> Order Now </button>
             <button>Donate</button>
         </div>
       </section>
+    <section id="menu-section">
+      <div class="top-bar">
+<p class="sub-heading">OUR MENU</p>
+      <h2><em>What are you craving?</em></h2>
+      </div>
+        
+      <div class="order-container">
+
+          <div class="menu-items">
+            <div class="menu-item">
+              <img src="/assets/food-items/roll.png" alt="Summer Roll" />
+              <h3>Summer Roll</h3>
+              <button>$60</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/beef.png" alt="Beef Stakes" />
+              <h3>Beef Stakes</h3>
+              <button>$55</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/cake.png" alt="Winter Cake" />
+              <h3>Winter Cake</h3>
+              <button>$30</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/chicken.png" alt="Chicken Serving" />
+              <h3>Chicken Serving</h3>
+              <button>$50</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/fish.png" alt="Fish & Co." />
+              <h3>Fish & Co.</h3>
+              <button>$45</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/sandwich.png" alt="Bread Burger" />
+              <h3>Bread Burger</h3>
+              <button>$20</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/pizza.png" alt="Bread Burger" />
+              <h3>Pizza Level</h3>
+              <button>$30</button>
+            </div>
+            <div class="menu-item">
+              <img src="/assets/food-items/cola.png" alt="Bread Burger" />
+              <h3>Big Boy Cola</h3>
+              <button>$25</button>
+            </div>
     </section>
+    <section id="story">
+        <div class="story-container">
+            <div>
+                <img src="./assets/duane-mendes-KlR6vX1R0fQ-unsplash (1).jpg" alt="someone-cooking" class="story-image">
+            </div>
+            <div class="story-text">
+              <span></span>
+                <p class="est">EST. 2024</p>
+                <h2>Our Story</h2>
+                <br>
+                <p>In August 2024, we encountered the most exciting problem: how to bring the joy of gourmet dining to everyone, everywhere. From humble beginnings, our passion for culinary excellence and community service has driven us to create a unique dining experience. At Bistromile, every meal you enjoy helps feed a family in need, making each bite not just a delight for your taste buds but also a step towards a better world. Join us in our journey of flavor and compassion, and be a part of something truly special. </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
