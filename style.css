@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+img{
+  loading: "lazy"
+}
+
 body {
   font-family: "Cormorant Infant", serif;
   background-color: #000103;
